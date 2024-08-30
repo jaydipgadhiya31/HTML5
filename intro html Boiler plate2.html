@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro html </title>
+</head>
+<body>
+    <ol>
+        <h2>
+            <li> what is HTML.</li>
+        </h2>
+            <p> <abbr title="HyperText Markup Language">HTML</abbr> HyperText Markup Language is a markup language that defines the <b>structure</b> and <b>content</b> of a web page. It's the
+            most basic building <i>block</i> of the web and is used to tell web browsers how to display a page's words and images.
+</p>
+        
+        <h2>
+            <li> what is Attribute.</li>
+        </h2>
+        <P>Attributes are used to adjust the behavior or display of an HTML element. It can be used to change the color, size or
+        functionality of HTML element. For instance, in the above boiler plate lang, charset, name and content are attributes</P> <br>
+        <p>Elements in <strong>HTML</strong> have <b>attributes</b> these are additional values that configure the elements or adjust their <i>behavior</i> in
+        various ways to meet the criteria the users want.</p>
+    </ol>
+    <h1>Attributes table</h1>
+    <table border="1" align="center">
+        <thead align="center">
+            <td>Attribute</td>
+            <td>Element</td>
+            <td>Description</td>
+        </thead>
+        <tr>
+            <td>class</td>
+            <td>Global Attribute</td>
+            <td>used to group elements for css</td>
+        </tr>
+        <tr>
+            <td>id</td>
+            <td>Global Attribute</td>
+            <td>Assign a unique id for the element</td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td>Global Attribute</td>
+            <td>CSS attribute for tags (Specifies an inline style for an element)</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>Global Attribute</td>
+            <td>Specifies extra information about an element (displayed as a tooltip)</td>
+        </tr>
+        <tr>
+            <td>lang</td>
+            <td>Global Attribute</td>
+            <td>Language of text</td>
+        </tr>
+        <tr>
+            <td>dir</td>
+            <td>Global Attribute</td>
+            <td>direction of text, ltr or rtl only</td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td> &lt; input &gt; &lt;audio&gt; &lt;video&gt; &lt;embed &gt;&lt;iframe &gt;&lt;source&gt; &lt;script&gt; &lt;track&gt; &lt;ol&gt;</td>
+            <td>Defines type of element.</td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td> &lt; img &gt; &lt;input&gt; &lt;video&gt; &lt;embed &gt;&lt;iframe &gt;&lt;source&gt; &lt;script&gt; &lt;track&gt; &lt;ol&gt;</td>
+            <td>source of media element</td>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td> &lt; A &gt;&lt; like &gt; </td>
+            <td>hypertext reference, path of hyperlink and link tag</td>
+        </tr>
+        <tr>
+            <td>tabindex</td>
+            <td> &lt; A &gt;&lt; input &gt;&lt; select &gt;&lt; button &gt; &lt; textarea &gt; </td>
+            <td>to override default tab order and follow the specific one.</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td> &lt; img &gt;&lt; embed &gt;&lt; video &gt;&lt; iframe &gt; </td>
+            <td>Set width of element.</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td> &lt; input &gt;&lt; option &gt;</td>
+            <td>Set default value of element visible at page load.</td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td> &lt; input &gt;&lt; select &gt;</td>
+            <td>Width of element in px. For input type text, size means no of characters.</td>
+        </tr>
+        <tr>
+       <td colspan="3" align="center"><h2>remove attribute</h2></td>
+        </tr>
+        <tr>
+            <td>bgcolor</td>
+            <td> &lt; body bgcolor="aqua" &gt;</td>
+            <td>Background Color of the document.</td>
+        </tr>
+        <tr>
+            <td>background</td>
+            <td> &lt; body background="img/bg.png" &gt;</td>
+            <td>Background Image of the document.</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td> &lt; table border="1" &gt;</td>
+            <td>To set border of table element..</td>
+        </tr>
+        <tr>
+            <td>align</td>
+            <td> &lt; p align="center" &gt;</td>
+            <td>Align left, right, center</td>
+        </tr>
+        <tr>
+            <td>valign</td>
+            <td> &lt; p valign="middle" &gt;</td>
+            <td>Align top, middle, bottom</td>
+        </tr>
+        <tr>
+            <td>collapsing</td>
+            <td> &lt; table cellspacing="10px" &gt;</td>
+            <td>change space (margin) between table cells</td>
+        </tr>
+        <tr>
+            <td>bottommargin</td>
+            <td> &lt; body bottommargin="20" &gt;</td>
+            <td>Margin from bottom</td>
+        </tr>
+        <tr>
+            <td>topmargin</td>
+            <td> &lt; body topmargin="10" &gt;</td>
+            <td>Margin from top</td>
+        </tr>
+    </table>
+   <h1>(Boiler Plate &lt;header&gt; &nbsp; main &nbsp; &lt;footer&gt; &lt;Body&gt;)</h1>
+   <ol>
+  <h2> <li>&lt; DOCTYPE HTML &gt;</li></h2>
+Doctype or document type declaration in html defines the type of web document we are using. Doctype includes the version
+of HTML and its DTD. Website will not be fully functional without doctype in Internet Explorer lower versions.
+Doctype is always declared before HTML opening tag. As per W3C, it is compulsory to define doctype of every webpage.
+Doctype is not a tag, its just document type representation of a webpage. <br>
+
+<h2> <li>&lt;html lang="en"&gt;:-</li></h2>
+<p>In HTML, the lang attribute <b>"en"</b> means that the page is <b>written in English</b></p>
+<h2> <li>&lt;head&gt;:-</li></h2>
+<p>The head tag in HTML is an element that defines the head section of a document, which contains metadata that's used by
+browsers and search engines. The head tag's contents aren't displayed on the page, but they're important for a number of
+reasons</p>
+<h4>Meta data and title</h4>
+<h2><li>&lt;title&gt;:-</li></h2>
+<p>is tag used naming the tab name.</p>
+<p>The HTML &lt;title &gt; tag defines <i>the document’s</i> title, <b>displayed in the browser’s</b> title bar or tab.</p>
+<h2> <li>&lt;meta data&gt;:-</li></h2>
+<p>meta data 4 types of <br>
+2 types by Default.</p>
+
+<ol>
+    <h3><li>meta:-/li></h3>
+        <p>1 meta is used <b>latest code</b>.</p>
+        <p>HTML meta tags or metadata are used to add metadata to a webpage. Usually meta tags are defined in <br>
+            <p>meta charset is used to specify the character encoding of webpage. It is compulsory to declare meta charset in a webpage</p> <br>
+            <p>UTF-8 or Unicode Transformation Format is the the most popular charset. UTF-8 can render almost all characters like
+            alphabets, numbers, greek, devnagri, spanish, french, chinese etc. UTF-8 is also the default charset of Chrome Browser.</p>
+        
+        <head> tag as these data are for search engines. Meta Tags were earlier known as meta tags, but in HTML5, the new name
+            is metadata.</p>
+    <h3>
+        <li>meta:-/li>
+    </h3>
+    <p>2 meta <b>viewport</b> amd <b>responsive</b> website</p>
+    <p>Meta Viewport is used in head. Viewport means the visible part of screen on any device.
+    Meta viewport is used in Responsive Web Design to control the width, scaling and user scablility.
+    Without viewport, browser display a webpage as per the actual screen size. But meta viewport adjust the screen fonts as
+    per the device pixel ratio. This means, we can see same desktop font on mobile device without zooming.
+</p>
+    <h3>
+        <li>meta:-/li>
+    </h3>
+    <p>3 meta <b>Description</b> to <i>search engine.</i></p>
+    <p>Meta description is the metadata used to declare description for search engines. Almost all search engines used meta
+    description to know description of a webpage.
+    It is recommended to used meta description in head for search engines. The recommended character length for meta
+    description is 160 characters.
+</p>
+    <h3>
+        <li>meta:-/li>
+    </h3>
+    <p>4 meta is <b>keywords</b> the <i>search engine.</i></p>
+    <p>SEO ranking start up.</p>
+</ol>
+<h3><li>&lt;Body&gt; :-</li></h3>
+<p>The body tag in HTML is the container for the main content of a web page.</p>
+</ol>
+</body>
+</html>
