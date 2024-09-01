@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image tag</title>
+</head>
+<body>
+    <h1>HTML &lt; image &gt;  tag :-</h1>
+    <p>HTML Images are defined within &lt; image &gt; tag. Image tag or &lt; image &gt; is a un pair element. src and alt attributes are used to add
+    properties to image</p>
+    <b>example:-</b>
+    <span>&lt;img src=" "&gt;alt=" "&gt;</span>
+    <h2>img attribute:-</h2>
+    <table border="1" align="center">
+        <thead align="center">
+            <td>Attribute</td>
+            <td>Use</td>
+        </thead>
+        <tr>
+            <td>src</td>
+            <td>source or path of image ( compulsory ) </td>
+        </tr>
+        <tr>
+            <td>alt</td>
+            <td>alternate text for image ( compulsory )</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>show tooltip on mouse over</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>control width of an image.</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>control height of an image</td>
+        </tr>
+    </table><br>
+    <b>example:-</b>
+    <span>&lt;img src="img/logo" alt="Tech Altum Logo"&gt;;</span>
+        <h1>&lt;picture&gt; The Picture element</h1>
+        <p>
+            The &lt;picture&gt; HTML element contains zero or more &lt;source&gt; elements and one &lt;img&gt; element to
+            offer alternative versions of an image for different display/device scenarios.
+        </p>
+        <p>
+            The browser will consider each child &lt;source&gt; element and choose the best match among them. If no matches
+            are found—or the browser doesn't support the &lt;picture&gt; element—the URL of the &lt;img&gt; element's src
+            attribute is selected.
+        </p>
+        <picture>
+            <source srcset="https://picsum.photos/id/237/200/300" media="(min-width:900px)">
+            <source srcset="https://picsum.photos/id/1/200/300" media="(min-width:500px)">
+            <img src="./img/bird.jpg" alt="image">
+        </picture>
+</body>
+</html>
