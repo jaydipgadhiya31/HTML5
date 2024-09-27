@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>HTML Form</h1>
+        <p>
+            An HTML Form is a section of the document that collects input from the user. The input from the user is
+            generally sent to a server (Web servers, Mail clients, etc). We use the HTML &lt;form&gt; element to create
+            forms in HTML.
+        </p>
+        <h3>HTML Form Elements</h3>
+        <p>
+            An HTML Form is a section of the document that collects input from the user. The input from the user is
+            generally sent to a server (Web servers, Mail clients, etc). We use the HTML &lt;form&gt; element to create
+            forms in HTML.
+        </p>
+        <h3>Form Attributes</h3>
+        <p>The HTML &lt;form&gt; element contains several attributes for controlling data submission. They are as follows:
+        </p>
+        <ul>
+            <li>action:</li>
+            <p>The action attributes define the action to be performed when the form is submitted. It is usually the url for
+                the server where the form data is to be sent.</p>
+            <li>method:</li>
+            <p>
+                The method attribute defines the HTTP method to be used when the form is submitted. There are 3 possible
+                values for the method attribute:
+            </p>
+            <ol>
+                <li>post:</li>
+                <p>It is used to send data to a server to update a resource.</p>
+                <li>get:</li>
+                <p> It is used to request data from a specified resource.
+                </p>
+                <li>dialog:</li>
+                <p>This method is used when the form is inside a &lt;dialog>&gt; element. Using this method closes the
+                    dialog and sends a form-submit event.</p>
+            </ol>
+            <li>target:</li>
+            <p>
+                It specifies where to display the response received after the form is submitted. Similar to the target
+                attribute in &lt;a&gt; tags, the target attribute has four possible values.
+            </p>
+            <ol>
+                <li>_self:</li>
+                <p>Load the response into the same browser tab.</p>
+                <li>_blank:</li>
+                <p>Load the response into a new browser tab.</p>
+                <li>_parent:</li>
+                <p>Load into the parent frame of the current one. If no parent is available,it loads the response into the
+                    same tab.</p>
+                <li>_top:</li>
+                <p>Load the response into the top-level frame. If no parent is available, it loads the response into the
+                    same tab.</p>
+            </ol>
+            <li>novalidate:</li>
+            <p>If the novalidate attribute is set, all validations in the form elements are skipped.</p>
+        </ul>
+        <hr>
+    
+        <table>
+            <tr>
+                <td><label for="username">username</label></td>
+                <td><input type="text" id="username" placeholder="enter your username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">password</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="email">email</label></td>
+                <td><input type="email" id="email" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="DOB">DOB</label></td>
+                <td><input type="date" id="DOB"></td>
+            </tr>
+            <tr>
+                <td><label for="time">date-time</label></td>
+                <td><input type="datetime-local" id="time"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" id="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    male<input type="radio" name="gender" id="">
+                    female<input type="radio" name="gender" id="">
+                    other<input type="radio" name="gender" id="">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Hobbies">Hobbies</label></td>
+                <td>
+                    swimming<input type="checkbox" name="" id="">
+                    game<input checked disabled type="checkbox" name="" id="">
+                    outing<input type="checkbox" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>enter your Hobbies</td>
+                <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="range">Range</label></td>
+                <td><input type="range" id="range" name="" value="0"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td>
+                    <select>
+                        <option value="none">select</option>
+                        <option value="Gandhinagar">Gandhinagar</option>
+                        <option value="Ahemdabad">Ahemdabad</option>
+                        <option value="Baroda">Baroda</option>
+                        <option value="Surat">Surat</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="education">Education</label></td>
+                <td>
+                    <select multiple>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="B.com">B.com</option>
+                        <option value="Er">Er</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Phd">Phd</otion>
+                        <option value="b.tech">b.tech</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="readmore">readmore</label></td>
+                <td><input type="button" value="readmore"></td>
+            </tr>
+            <tr>
+                <td><button>readmore</button></td>
+            </tr>
+            <tr>
+                <td><label for="reset">reset</label></td>
+                <td><input type="reset" value="reset"></td>
+            </tr>
+            <tr>
+                <td><label for="submit">Submit</label></td>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+            <tr>
+                <td><label for="education">education</label></td>
+                <td><input list="education" id="education">
+                    <datalist id="education">
+                        <option value="10th"></option>
+                        <option value="12th"></option>
+                        <option value="BE">
+                        <option>
+                        <option value="Dr"></option>
+                    </datalist>
+                </td>
+            </tr>
+    
+        </table>
+    </body>
+    <h1> HTML form tag</h1>
+    <p><b>HTML Forms</b> are used to <b>send data</b> across the web and are often used as <b>contact form</b>to convertinformation input by a user
+    into Leads. <b>HTML forms</b> are used to pass data to the server.
+    The common elements used in <b>HTML form</b> are <b>form tag, input, textarea,, select, and label.</b>
+</p>
+<h2>HTML Form Elements</h2>
+<ul>
+    <li>HTML Form Tag</li>
+    <li>Input Tag</li>
+    <li>Input type password</li>
+    <li>Input type file</li>
+    <li>Radio Buttons</li>
+    <li>Checkbox</li>
+    <li>Select Dropdown</li>
+    <li>Textarea</li>
+    <li>Button</li>
+    <li>Fieldset</li>
+    <li>Contact Form Example</li>
+</ul>
+<table border="1">
+    <thead>
+        <td>Attribute</td>
+        <td>Values</td>
+        <td>use</td>
+    </thead>
+    <tr>
+        <td>method</td>
+        <td>get or post</td>
+        <td>The method attribute in HTML specifies how to send form data to a server. The two options for the method
+            attribute are
+            "get" and "post".</td>
+    </tr>
+    <tr>
+        <td>action</td>
+        <td>path</td>
+        <td>the backend file collecting form data.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td>text, password, file, radio, checkbox, button, submit, and reset.</td>
+        <td>type defines type of input control.</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>default value is 20.</td>
+        <td>change size of input control.</td>
+    </tr>
+    <tr>
+        <td>tabindex</td>
+        <td>any numeric value.</td>
+        <td>used to define a sequence.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>any possible value.</td>
+        <td>set a default value of input control.</td>
+    </tr>
+    <tr>
+        <td>maxlength</td>
+        <td>any possible value.</td>
+        <td>The maxlength attribute defines the maximum string length that the user can enter into an &lt;input &gt; or
+            &lt;textarea &gt;. The attribute must have an integer value of 0 or higher.</td>
+    </tr>
+    <tr>
+        <td>disabled</td>
+        <td>"".</td>
+        <td>disabled input control, or fieldset tag.</td>
+    </tr>
+    <tr>
+        <td>checked</td>
+        <td>"".</td>
+        <td>choose checkbox and radio button.</td>
+    </tr>
+</table>
+<h1> Example :-</h1>
+<!-- 1 -->
+<form action="php">
+    <h1>Registration From</h1>
+    <table>
+        <tr>
+            <td><label for="First name">first name</label></td>
+            <td><input type="text" id="First name" /></td>
+        </tr>
+        <tr>
+            <td><label for="last name">last name</label></td>
+            <td><input type="text" id="last name" /></td>
+        </tr>
+        <tr>
+            <td><label for="nick name">nick name</label></td>
+            <td><input type="text" name="" id="nick name" /></td>
+        </tr>
+        <tr>
+            <td><label for="E-mail">E-mail</label></td>
+            <td><input type="email" id="E-mail" required /></td>
+        </tr>
+        <tr>
+            <td><label for="Password">Password</label></td>
+            <td><input type="password" id="Password" /></td>
+        </tr>
+        <tr>
+            <td><label for="Date of birth">Date of birth</label></td>
+            <td><input type="text" id="Date of birth" /></td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td>
+                <input type="radio" name="Gender" id="male" /><label for="">male</label>
+                <input type="radio" name="Gender" id="female" /><label for="">female</label>
+                <input type="radio" name="Gender" id="others" /><label for="">others</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="mobile">mobile</label></td>
+            <td><input type="tel" id="mobile" /></td>
+        </tr>
+        <tr>
+            <td><label for="Address">Address</label></td>
+            <td><textarea name="" id="Address"></textarea></td>
+        </tr>
+        <tr>
+            <td><button>Submit</button> <button>reset</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
